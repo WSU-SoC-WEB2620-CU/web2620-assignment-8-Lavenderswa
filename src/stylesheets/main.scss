@@ -1,1 +1,15 @@
-// Your styles go here
+// Variable overrides first
+$primary: #D63384;
+$secondary:#E77FB0;
+$success:#6E7B86;
+$danger:#D2D3D4;
+$light:#F7F7F7;
+$dark:#23252B;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+

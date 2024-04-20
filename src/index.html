@@ -9,8 +9,283 @@
 </head>
 
 <body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
+
+  <!-- Icons Used: Bootstrap icon, Check mark, X mark  
+
+  <i class="fab fa-bootstrap"></i>
+  <i class="fas fa-check-circle"></i>
+  <i class="fas fa-times"></i>
+
+-->
+
+  <header> 
+    <!-- Navbar -->
+    <!-- The links on the navbar must be functional. Each one must be an internal link to a corresponding section on the page. For example, the link Features should link to the Features section on the page and so on. -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="#"><i class="fab fa-bootstrap"></i></a>
+        <a class="navbar-brand text-primary fw-bold" href="#">Henry Nelson</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-primary">
+            <a class="nav-link active text-reset" aria-current="page" href="#Features">Features</a>
+            <a class="nav-link active text-reset" aria-current="page" href="#Plans">Plans</a>
+            <a class="nav-link active text-reset" aria-current="page" href="#Pricing">Pricing</a>
+            <a class="nav-link active text-reset" aria-current="page" href="#Gallery">Gallery</a>
+            <a class="nav-link active text-reset" aria-current="page" href="#Projects">Projects</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+
+    <div class="p-5 bg-secondary container-fluid text-white">
+      <h2 class="display-3 font-weight-bold">A Bootstrap Demo</h2>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dolores quia blanditiis enim possimus tenetur rerum labore, sit molestiae, asperiores nihil harum incidunt ratione! Ad, pariatur id! Recusandae, nulla debitis.</p>
+      <div class="mx-auto center p-3 text-center">
+      <button type="button" class="btn btn-warning btn-lg mx-2">Click Here to see more</button>
+      <button type="button" class="btn btn-info btn-lg mx-2">Click Here to see demo</button>
+      </div>
+    </div>
+  </header> 
+
+  <!-- Main -->
+<main class="mx-auto" style="width:70%">
+    
+<!-- Features, "Use Bootstrap placeholders for the cards under the Features section."-->
+    <div class="bg-white mx-auto mb-4" id="Features"> 
+          <h1 class="text-center text-primary mx-auto pb-md-2 pt-md-4">Features</h1>
+          <h5 class="text-success text-center mx-auto pb-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem adipisci neque quam blanditiis beatae commodi enim odit voluptates vero reiciendis ipsum consequatur veniam, accusamus impedit officia, rerum placeat natus?</h5>
+      
+          <div class="row row-cols-1 row-cols-md-3 g-4 px-2">
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-primary" style="height:160px"></div>
+                <div class="card-body">
+                  <h5 class="card-title text-danger">█████████████</h5>
+                  <p class="card-text text-danger">██████████████ ███████████ ████████ ██████████████ ████████████████</p>
+                  <button type="button" class="btn btn-sm bg-secondary text-secondary">Click Here to see</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-primary" style="height:160px"></div>
+                <div class="card-body">
+                  <h5 class="card-title text-danger">█████████████</h5>
+                  <p class="card-text text-danger">██████████████ ███████████ ████████ ██████████████ ████████████████</p>
+                  <button type="button" class="btn btn-sm bg-secondary text-secondary">Click Here to see</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="bg-primary" style="height:160px"></div>
+                <div class="card-body">
+                  <h5 class="card-title text-danger">█████████████</h5>
+                  <p class="card-text text-danger">██████████████ ███████████ ████████ ██████████████ ████████████████</p>
+                  <button type="button" class="btn btn-sm bg-secondary text-secondary">Click Here to see</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+
+    
+<!-- Plans -->
+<div class="bg-white mx-auto d-flex justify-content-between py-4" id="Plans"> 
+
+  <div class="pe-5" style="width:40%">
+  <h1 class="text-center text-primary mx-auto pb-md-2 pt-md-4 ">Plans</h1>
+  <h5 class="text-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ipsa esse beatae accusantium voluptatibus necessitatibus nesciunt quas labore architecto culpa illo reiciendis sapiente, at et soluta unde numquam autem pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+</div>
+
+<div class="h-fit border-2 border-top border-bottom border-primary" style="width:60%">
+
+  <table class="table h-100">
+    <thead>
+      <tbody class="table-group-divider"></tbody>
+      <tr>
+        <th scope="col">Features</th>
+        <th class=" text-center" scope="col">Free</th>
+        <th  class=" text-center bg-primary text-white" scope="col">Pro</th>
+        <th class=" text-center" scope="col">Enterprise</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider fw-normal"> <!-- Couldn't get this to be Primary color :( -->
+      <tr>
+        <th scope="row">Lorem ipsum dolor</th>
+        <td class="text-center"> <i class="fas fa-check-circle"></i></td>
+        <td class=" text-center bg-primary text-white"><i class="fas fa-check-circle"></i></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Sit amet consectetur</th>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+        <td class=" text-center bg-primary text-white"><i class="fas fa-check-circle"></i></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Adipisicing elit atque</th>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+        <td  class=" text-center bg-primary text-white"><i class="fas fa-check-circle"></i></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Nemo rerum esse tempore</th>
+        <td class="text-center text-primary"><i class="fas fa-times"></i></td>
+        <td  class=" text-center bg-primary text-white"><i class="fas fa-check-circle"></i></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Quasi nesciunt commodi</th>
+        <td class="text-center text-primary"><i class="fas fa-times"></i></td>
+        <td  class=" text-center bg-primary text-white"><i class="fas fa-check-circle"></i></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Odit in nihil labore</th>
+        <td class="text-center text-primary"><i class="fas fa-times"></i></td>
+        <td  class=" text-center bg-primary text-white"><i class="fas fa-check-circle"></i></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Cupiditate id debitis</th>
+        <td class="text-center text-primary"><i class="fas fa-times"></i></td>
+        <td  class=" text-center bg-primary text-white"></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Aperiam quia quae cum</th>
+        <td class="text-center text-primary"><i class="fas fa-times"></i></td>
+        <td  class=" text-center bg-primary text-white"></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Eligendi blanditiis</th>
+        <td class="text-center text-primary"><i class="fas fa-times"></i></td>
+        <td  class=" text-center bg-primary text-white"></td>
+        <td class="text-center"><i class="fas fa-check-circle"></i></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+
+<!-- Pricing -->
+        
+    <div class="bg-white mx-auto  py-4" id="Pricing"> 
+      <h1 class="text-center text-primary mx-auto pb-md-4 pt-md-4">Pricing</h1>
+      <h5 class="text-success text-center mx-auto pb-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, neque quam blanditiis beatae commodi enim odit voluptates vero reiciendis ipsum consequatur veniam, accusamus impedit officia, rerum placeat natus?</h5>
+      
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 px-2">
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header text-center bg-light"><h5>Free</h5></div>
+            <div class="card-body">
+              <div class="text-center"><h2 class="my-5">$0<small class="text-body-secondary">/mo</small></h2></div>
+              <button type="button" class="btn btn-sm btn-outline-primary position-relative py-2 px-4 w-100 fs-5">Sign up for free</button>
+              <div class="card-text text-center py-3">
+              <hr><p>10 users included</p>
+              <hr><p>2 GB of storage</p>
+              <hr><p>Email support</p>
+              <hr><p>Help center access</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header text-center bg-success text-white"><h5>Pro</h5></div>
+            <div class="card-body">
+              <div class="text-center"><h2 class="my-5">$15<small class="text-body-secondary">/mo</small></h2></div>
+              <button type="button" class="btn btn-sm bg-success text-white position-relative py-2 px-4 w-100 fs-5">Get started</button>
+              <div class="card-text text-center py-3">
+              <hr><p>20 users included</p>
+              <hr><p>10 GB of storage</p>
+              <hr><p>Priority email support</p>
+              <hr><p>Help center access</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-header text-center bg-primary text-white"><h5>Enterprise</h5></div>
+            <div class="card-body">
+              <div class="text-center"><h2 class="my-5">$29<small class="text-body-secondary">/mo</small></h2></div>
+              <button type="button" class="btn btn-sm bg-primary text-white position-relative py-2 px-4 w-100 fs-5">Contact us</button>
+              <div class="card-text text-center py-3">
+              <hr><p>30 users included</p>
+              <hr><p>20 GB of storage</p>
+              <hr><p>Phone email support</p>
+              <hr><p>Help center access</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+</div>
+
+
+<!-- Gallery --> 
+<!-- Image Gallery is grid system -->
+        
+<div class="bg-warning mx-auto  py-4" id="Gallery"> 
+  <h1 class="text-center text-primary mx-auto pb-md-4 pt-md-4">Gallery</h1>
+<div class="container-fluid">
+
+ 
+
+</div>
+</div>
+
+
+<!-- Projects -->
+        
+<div class="bg-warning mx-auto  py-4" id="Projects"> 
+  <h1 class="text-center text-primary mx-auto pb-md-4 pt-md-4">Top Projects</h1>
+<div class="container-fluid">
+
+ 
+
+</div>
+</div>
+
+
+  </main>
+  
+  
+  <footer> <!-- The links on the footer can be fake. -->
+    <div class="container-fluid text-center p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">&copy; All rights reserved
+        </div>
+        <div class="col">
+          Column
+        </div>
+      </div>
+    </div>
+  </footer>
+
 <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
